@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs">
+ <head>
+    <title>Have you seen this woman?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen" href="style.css"/>
+ </head>
+ <body>
+     <div class="titleBar">
+        <h2>Missing Persons Report: Sydney Pinto</h2>
+		<style>
+			.container {
+			  display: inline-block;
+			  cursor: pointer;
+			}
+
+			.bar1, .bar2, .bar3 {
+			  width: 35px;
+			  height: 5px;
+			  background-color: white;
+			  margin: 6px 0;
+			  transition: 0.4s;
+			}
+
+			.change .bar1 {
+			  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+			  transform: rotate(-45deg) translate(-9px, 6px);
+			}
+
+			.change .bar2 {opacity: 0;}
+
+			.change .bar3 {
+			  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+			  transform: rotate(45deg) translate(-8px, -8px);
+			}
+		</style>
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<input type="text" id="hiddenBar" placeholder="Enter keywords gathered from your clues. FOR MY EYES ONLY.">
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+  var hide = document.getElementById("hiddenBar");
+  if (hide.style.display === "none") {
+    hide.style.display = "block";
+  } else {
+    hide.style.display = "none";
+  }
+}
+</script>
+</div>
+	 <div class="page">
+	   <div class="pageLeft">
+			<img src="missingStock.jpg" alt="Roses" width=800" height="600" border="4"></img>
+			<h1>About the Case</h1>
+			<p>On the night of 06/26/2022, Sydney Lee Pinto disappeared from her family's home at Branch Brook Campground in Campton; a small town in Grafton County, New Hampshire. According to her mother, Heather Pinto, she'd spent the day on a "girl's trip" with Heather and her best friend, Maura Harty. They returned home around 6:00 P.M. that evening, at which point the various members of the family set to their nightly routine; Maura went to spend time with Sydney's brother, Alex Pinto, while Heather and Pedro, Sydney's father, took to watching television. Sydney's absence wouldn't be noticed until the morning, but it's suspected she went missing around 8:00 P.M. while taking her dog for a walk on the family's property. Heather asserts that Sydney would usually walk the dog on the edge of the family's property, near what's dubbed "The Birches".</p>
+	   </div>
+	   <div class="pageRight">
+		 <div class="signupFormWrap">
+		   <div class="signupForm">
+			 <h2>Police Report Details</h2>
+				<ul>
+				  <li>Missing Since: 06/26/2022</li>
+				  <li>Last known location: The Birches, Branch Brook Campground</li>
+				  <li>Last wearing: red shorts, grey "Branch Brook Campground Staff" t-shirt</li>
+			 </div>
+		</div>
+		<div class="fanMonth">
+		  <h2>Victim</h2>
+		  <img src="missingPerson.jpg" width="400" height="400"></img>
+		  <h1>Sydney Pinto</h1>
+		  <p>Age: 19</p>
+		  </p>DOB: 11/12/2002</p>
+		  <p>Hair: Dyed Red</p>
+		  <p>Eyes: Brown</p>
+		  <p>Height: 5'2"</p>
+		  <p>Weight: 182lbs</p>
+		  <p>Missing from: Campton, NH</p>
+		</div>
+	   </div>
+	  </div>
+	  <script src="scripts.js" async></script>
+
+</body>
+</html>
