@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs" id="camp-page">
+ <head>
+    <title>Have you seen this woman?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen" href="style.css"/>
+ </head>
+ <body class="bodyCamp">
+     <div class="titleBarCamp">
+		<img src="branchbrookheader.png">
+		<style>
+			.container {
+			  display: inline-block;
+			  cursor: pointer;
+			}
+
+			.bar1, .bar2, .bar3 {
+			  width: 35px;
+			  height: 5px;
+			  background-color: white;
+			  margin: 6px 0;
+			  transition: 0.4s;
+			}
+
+			.change .bar1 {
+			  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+			  transform: rotate(-45deg) translate(-9px, 6px);
+			}
+
+			.change .bar2 {opacity: 0;}
+
+			.change .bar3 {
+			  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+			  transform: rotate(45deg) translate(-8px, -8px);
+			}
+		</style>
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<input type="text" id="hiddenBar" placeholder="Enter keywords gathered from your clues. FOR MY EYES ONLY.">
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+  var hide = document.getElementById("hiddenBar");
+  if (hide.style.display === "none") {
+    hide.style.display = "block";
+  } else {
+    hide.style.display = "none";
+  }
+}
+</script>
+
+
+    <main id="main">
+      <form name="store-items" id="store-items" action="#" aria-labelledby="store-items">
+        <h2 id="available-store-items">Kayak Rentals: </h2>
+        <fieldset name="store-item-field">
+          <ol id="store-items-for-sale">
+
+            <li class="product-section">
+              <img src="water.png" alt="Mug"></img>
+              <label for="mug" class="mug-css">Single Kayak $<span class="value"/>25.00</label>
+              <button type="button" class="add-item-button" name="addproduct1">+</button>
+              <p>Description: Fits one passenger. Full day rental.</p>
+            </li>
+            <li class="product-section">
+              <img src="water.png" alt="Table Mat"></img>
+              <label for="cup" class="cup-css">Double Kayak $<span class="value"/>30.00</label>
+              <button type="button" class="add-item-button" name="addproduct2">+</button>
+              <p>Description: Fits two passengers. Full day rental.</p>
+            </li>
+            <li class="product-section">
+              <img src="water.png" alt="Table Mat"></img>
+              <label for="table-mat" class="table-mat-css">Small Canoe $<span class="value"/>40.00</label>
+              <button type="button" class="add-item-button" name="addproduct3">+</button>
+              <p>Description: Fits three passengers. Full day rental.'.</p>
+            </li>
+            <li class="product-section">
+              <img src="water.png" alt="Napkins"></img>
+              <label for="napkin" class="napkin-css">Large Canoe $<span class="value"/>50.00</label>
+              <button type="button" class="add-item-button" name="addproduct4">+</button>
+              <p>Description: Fits four passengers. Full day rental.</p>
+			</li>
+			</fieldset>
+		</form>
+	</main>
+
+
+
+
+<script src="scripts.js" async></script>
+
+</body>
+</html>

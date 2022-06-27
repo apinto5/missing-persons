@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="nojs" id="camp-page">
+ <head>
+    <title>Have you seen this woman?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen" href="style.css"/>
+ </head>
+ <body class="body">
+     <div class="titleBar">
+        <h2>Missing Persons Report: Sydney Pinto</h2>
+		<style>
+			.container {
+			  display: inline-block;
+			  cursor: pointer;
+			}
+
+			.bar1, .bar2, .bar3 {
+			  width: 35px;
+			  height: 5px;
+			  background-color: white;
+			  margin: 6px 0;
+			  transition: 0.4s;
+			}
+
+			.change .bar1 {
+			  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+			  transform: rotate(-45deg) translate(-9px, 6px);
+			}
+
+			.change .bar2 {opacity: 0;}
+
+			.change .bar3 {
+			  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+			  transform: rotate(45deg) translate(-8px, -8px);
+			}
+		</style>
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<input type="text" id="hiddenBar" placeholder="Enter keywords gathered from your clues. FOR MY EYES ONLY.">
+</div>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+  var hide = document.getElementById("hiddenBar");
+  if (hide.style.display === "none") {
+    hide.style.display = "block";
+  } else {
+    hide.style.display = "none";
+  }
+}
+</script>
+<script src="scripts.js" async></script>
+<div class="mapArea">
+  <h1>If you want her back; come get her. 7 PM.</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.578746846245!2d-71.43987148466242!3d43.531976479125646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb333f664530a89%3A0xcd8e841f122983e6!2sEscape%20Hour%20House!5e0!3m2!1sen!2sus!4v1656271366429!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+</html>
